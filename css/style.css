@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* logo */
+.logo{
+    width: 5rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px 0px;
+}
+.logo img{
+    
+    width: 60%;
+    border: 2px solid white;
+    border-radius:50% ;
+    padding: 0px 0px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    
+}
+
+/* content of navigation-list(logo and lists) */
+.nav-list{
+    /* border: 2px solid black; */
+    /* background-color: black; */
+    /* width: 50%; */
+    width: 70%;
+    /* for making lists in a row manner */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.nav-list li{
+    /* for removing the dot from the list */
+     list-style: none;
+     padding: 23px;
+     
+    }
+.nav-list li a{
+        /* for remove  underline */
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+.nav-list li a:hover{
+        color: grey;
+    }
+
+/* content of right-nav(serach-bar and button) */
+.rightNav{
+    /* border: 2px solid red; */
+    /* background-color: rgb(91, 100, 233); */
+    /* width: 50%; */
+    width: 30%;
+    text-align: right;
+    padding: 0px 23px;
+}
+
+/* style for serach box */
+#search{
+     padding: 5px;
+     font-size: 17px;
+     border-radius: 2px solid grey
+     ;
+     border-radius: 9px;
+}
+
+.background{
+    background: rgba(0,0,0,0.7) url('../image/background.jpg') ;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+/* .secondHalf img{
+    width: 13rem;
+    height: 13rem;
+} */
+
+/* for covering by background image to all background */
+.firstSection{
+    height: 100vh;
+}
+
+/*Box-main(.firstHalf,.secondHalf)*/
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    /* for centering the all content of boxmain */
+    max-width: 50%;
+    margin: auto;
+    height: 100%;
+    padding: 20px;
+}
+
+/* firstHalf(two texts and two buttons) */
+.firstHalf{
+    width: 80%;
+    display:flex ;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* secondHalf(image) */
+.secondHalf{
+    width: 30%;
+
+}
+.secondHalf img{
+    width: 275px;
+    padding: 0px 0;
+    border: 2px solid white;
+    border-radius: 15px;
+    display: block;
+    margin: auto;
+}
+
+.text-big{
+    font-size: 25px;
+    margin-bottom: 18px;
+}
+
+.text-small{
+font-size: 15px;
+font-weight: 1rem;
+margin-bottom: 9px;
+margin-right: 9px;
+}
+
+.btn{
+    padding:7px 15px ;
+    margin:10px 0 ;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 8px;
+    /* font-size: 16px; */
+    background: none;
+    color: white;
+    margin: 3px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
+}
+
+.btn-sm{
+    padding: 4px 10px ;
+    vertical-align: middle;
+}
+
+.btn-dark{
+    color: black;
+    border: 2px solid grey;
+    width: 94px;
+    display: block;
+    margin: auto;
+    
+    
+}
+
+.section{
+    /* height: 400px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: 30px auto;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+.section-left{
+    
+    flex-direction: row-reverse;
+}
+.paras{
+    padding: 0 65px;
+}
+
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thumbnail img{
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.contact{
+    background-color: rgb(219, 216, 216);
+    height: 110vh;
+    margin: 15px;
+    border-radius: 9px;
+}
+
+.text-center{
+    text-align: center;
+    padding-top: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+}
+ 
+.form{
+    width: 400px;
+    margin: 25px auto;
+
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+
+}
+
+.form-input{
+    margin: 14px 0;
+    width: 100%;
+    font-size: 19px;
+    border:2px solid grey;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text-footer{
+    text-align: center;
+    padding: 15px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;   
+}
+
+    .burger{
+        display: none;
+         position: absolute;
+         cursor: pointer;
+         right: 3px;
+         top: 3px;
+
+    }
+
+    .line{
+        width: 30px;
+        background-color: white;
+        height: 3px;
+        margin:4px 4px;
+    }
+
+@media only screen and  (max-width:1140px) {
+    .nav-list{
+        flex-direction: column;
+
+    }
+
+    /* for all the list-item should be in center */
+    .navbar{
+        height: 478px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+
+    /* for search box and serch should be center */
+    .rightNav{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    
+    .firstSection{
+        height: 100%;
+        width: 100%;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+        height: 100%;
+        /* align-items: center; */
+    
+    }
+
+     .firstHalf{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+     }
+    .secondHalf{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* for serch box shrink */
+    #search{
+        /* width: 100%; */
+    }
+   
+    .btn-sm{
+        /* width: 70%; */
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .h-nav-resp{
+        height: 72px;
+    }
+
+    .v-class-resp{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .btn{
+        text-align: center;
+    }
+
+    .contact{
+        height: 100%;
+        /* width: 100%; */
+        /* width:1rem; */
+    }
+    .form{
+        width:50%;
+    }
+
+    .paras{
+        padding: 0px;
+    }
+
+    .button{
+    display: flex;
+        align-items: center;
+    }
+    
+}
